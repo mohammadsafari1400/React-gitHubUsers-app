@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.header {
+  width: 100%;
+  background-color: rgb(219, 71, 71);
+  padding: 25px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo h1 {
+  color: white;
+}
+.header .nav {
+  display: flex;
+}
+.header .nav span {
+  margin-left: 10px;
+  color: white;
+}
+.search,
+.about {
+  width: 80%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+}
+.search .form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.search .form input {
+  padding: 7px 5px;
+  outline: none;
+}
+.search .form .btn-search,
+.search .btn-remove {
+  all: unset;
+  width: 100%;
+  cursor: pointer;
+  padding: 7px 0;
+  text-align: center;
+  color: white;
+  margin-top: 5px;
+}
+.search .form .btn-search {
+  background-color: rgb(0, 162, 255);
+}
+.search .btn-remove {
+  background-color: rgb(255, 115, 0);
+}
+.users {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.users img {
+  width: 45%;
+  margin: 0 auto;
+}
+.users .user {
+  width: 31%;
+  border: 1px solid rgba(0, 0, 0, 0.082);
+  border-radius: 10px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.users .user .user-name {
+  margin: 10px 0;
+}
+.users .user img {
+  width: 30%;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+.users .user .btn-more {
+  all: unset;
+  width: 100%;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.699);
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+}
+.users .user a {
+  width: 100%;
+}
+.box {
+  padding: 30px;
+}
+.single {
+  width: 100%;
+  display: flex;
+}
+.single .pic {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.single .pic img {
+  width: 30%;
+  border-radius: 50%;
+  background-color: red;
+}
+.single .pic .login {
+  margin: 10px 0;
+}
+.single .info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.single .info .btn-git {
+  all: unset;
+  margin: 25px 0;
+}
+.single .info .btn-git a {
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: black;
+}
+.single .info .blog {
+  margin-top: 15px;
+}
+.style {
+  border: 1px solid rgba(0, 0, 0, 0.144);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 15px;
+}
+.socials {
+  display: flex;
+  justify-content: space-evenly;
+}
+.socials .social {
+  padding: 10px 15px;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.socials .following {
+  background-color: rgb(207, 26, 26);
+}
+.socials .Followers {
+  background-color: rgb(33, 33, 240);
+}
+.socials .public-repos {
+  background-color: rgb(173, 173, 23);
+}
+.socials .public-gists {
+  background-color: rgb(17, 119, 17);
+}
+.loading {
+  width: 70px;
+  height: 70px;
+  border: 10px solid rgba(255, 68, 0, 0.137);
+  border-bottom: 10px solid rgb(255, 68, 0);
+  border-radius: 50%;
+  animation: 0.5s spinner infinite linear;
+  margin: 20px auto;
+}
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
